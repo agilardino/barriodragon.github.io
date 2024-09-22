@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/roenksync" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>Barrio Dragón - La Carta</title>
+    <style>
+          /* Estilo básico para el botón */
+          #btnIrArriba {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #a01c1c;
+            color: #fff;
+            border: none;
+            border-radius: 100%;
+            padding: 15px 20px;
+            cursor: pointer;
+            z-index: 1;
+            opacity: 0; /* Hacer el botón inicialmente transparente */
+            transition: opacity 0.3s ease-in-out; /* Agregar transición de opacidad */
+        }
+
+        /* Estilo del botón al pasar el ratón sobre él */
+        #btnIrArriba:hover {
+            background-color: #a01c1c;
+        }
+        .fa-solid {
+            font-size: 1.25rem;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="irArriba()" id="btnIrArriba" title="Ir Arriba"><i class="fa-solid fa-arrow-up"></i></button>
+
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-lg-12 cabecera">
+                    <img src="img/la-carta/header.png" alt="">            
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" style="background-color: black;">
+                    <h2 class="text-center"><strong>La Carta</strong></h2>
+                </div>
+            </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <nav class="container">
+        <div class="row items-carta">
+            <ul class="col-12  text-center">
+                <li>Las sopas</li>
+                <li>Piqueos y acompañamientos</li>
+                <li>los arroces</li>
+                <li>los tallarines</li>
+                <li>las carnes</li>
+                <li>los especiales</li>
+                <li>las tortillas</li>
+                <li>los vegetarianos</li>
+                <li>los combos personales</li>
+                <li>los combos familiares</li>
+                <li>las bebidas</li>
+            </ul>
+        </div>
+
+    </nav>
+    <section id="las-sopas">
+        <div class="container lc-sopas">
+            <div class="row">
+                <div class="col-12 py-5">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/la-carta/las-sopas.png">
+                    <img src="img/la-carta/las-sopas-110w.png" alt="">
+                </picture>
+                </div>
+            </div>
+            <div class="row lc-sopas">         
+                 <div class="col-12 col-md-4 text-center py-3">
+                    <h3>Sopa Wantán</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                    <p><span class="precio">S/. 21.90</span></p>
+                </div>
+                <div class="col-12 col-md-4 text-center">
+                    <h3>Sopa Wantán Especial</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                    <p><span class="precio">S/. 21.90</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="display-carta col-12">
+                    <div class="carta-menu">
+                      <img src="img/la-carta/sopa-1.png" alt="">
+                    </div>
+                    <div class="cuerpo">
+                        <img src="img/alas-dragon.svg" alt="">
+                      <h2 class="nombre-menu">sopa siu kao</h2>
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque porro voluptates asperiores repellat eaque? Doloremque, provident corrupti.</p>
+                      <p><span class="precio">S/. 21.90</span></p>
+                    </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6 text-center">
+                    <h3>Sopa Wantán</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                    <p><span class="precio">S/. 21.90</span></p>
+                </div>
+                <div class="col-12 col-md-6 text-center">
+                    <h3>Sopa Wantán Especial</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                    <p><span class="precio">S/. 21.90</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="los-piqueos">
+        <div class="container lc-sopas">
+            <div class="row ">
+                <div class="col-12 py-5">
+                    <picture>
+                        <source media="(max-width: 600px)" srcset="img/la-carta/piqueos.png">
+                    <img src="img/la-carta/piqueos-110w.png" alt="">
+                </picture>
+                </div>
+            </div>
+            <div class="row lc-sopas" >
+                <div class="col-12 col-md-3 text-center">
+                    <h3>Sopa Wantán Especial</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                    <p><strong>12 wantanes</strong><br><span class="precio">S/ 25.00</span></p>
+                    <p><strong>06 wantanes</strong><br><span class="precio">S/12.90</span></p>
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <h3>Nabo encurtido</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                    <p><span class="precio">S/ 14.90</span></p>
+                    <p><strong>Media porción</strong><br><span class="precio">S/7.90</span></p>
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <h3>Siu mai</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                    <p><span class="precio">S/ 14.90</span></p>
+                    
+                </div>
+            </div>
+            <div class="row lc-sopas">
+                <div class="display-carta col-12 px-4">
+                        <div class="carta-menu">
+                          <img src="img/la-carta/siumai.jpg" alt="">
+                        </div>
+                        <div class="cuerpo">
+                            <img src="img/alas-dragon.svg" alt="">
+                            <h2 class="nombre-menu">Siu Mai</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque porro voluptates asperiores repellat eaque? Doloremque, provident corrupti.</p>
+                            <p><span class="precio">S/. 21.90</span></p>
+                        </div>
+                    </div>
+                <div class="col-12 col-md-3 text-center">
+                        <h3>Siu Kao</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                        <p><span class="precio">S/ 25.00</span></p>
+                        
+                    </div>
+                    <div class="col-12 col-md-3 text-center">
+                        <h3>Chicharrón de Pollo</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                        <p><span class="precio">S/ 14.90</span></p>
+                        
+                    </div>
+                    <div class="col-12 col-md-3 text-center">
+                        <h3>Chicharron de Alitas</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                        <p><span class="precio">S/ 14.90</span></p>
+                        
+                    </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="arroces">
+        <div class="container-md">
+            <div class="row">
+                <div class="col-12 py-5">
+                    <picture>
+                        <source media="(max-width: 768px)" srcset="img/la-carta/arroces.png">
+                    <img src="img/la-carta/los-arroces-110w.png" alt="">
+                </picture>
+                </div>
+            </div>
+            <div class="row lc-sopas">
+                <div class="col-12 col-md-3 text-center px-4">
+                    <h3>Chaufa con Pollo</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                    <p><span class="precio">S/ 14.90</span></p>
+                    
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <h3>Chaufa con Chancho Asado</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                    <p><span class="precio">S/ 14.90</span></p>
+                    
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <h3>Chaufa con Pato Asado</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                    <p><span class="precio">S/ 14.90</span></p>
+                    
+                </div>
+                <div class="display-carta col-12 px-4">
+                    <div class="carta-menu">
+                      <img src="img/ChaufaDragon-pic_3.jpg" alt="">
+                    </div>
+                    <div class="cuerpo">
+                        <img src="img/alas-dragon.svg" alt="">
+                        <h2 class="nombre-menu">Chaufa Dragón</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque porro voluptates asperiores repellat eaque? Doloremque, provident corrupti.</p>
+                        <p><span class="precio">S/. 21.90</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row lc-sopas">
+                
+                <div class="col-12 text-center col-md-3 px-4">
+                    <h3>Chaufa con langostino</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                    <p><span class="precio">S/ 14.90</span></p>
+                    
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <h3>Chaufa especial</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                    <p><span class="precio">S/ 14.90</span></p>
+                    
+                </div>
+                <div class="col-12 col-md-3 text-center">
+                    <h3>Chaufa con carne</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                    <p><span class="precio">S/ 14.90</span></p>
+                    
+                </div>
+                <div class="display-carta col-12 px-4">
+                    <div class="carta-menu">
+                      <img src="img/ChaufaDragon-pic_3.jpg" alt="">
+                    </div>
+                    <div class="cuerpo">
+                        <img src="img/alas-dragon.svg" alt="">
+                        <h2 class="nombre-menu">Chaufa Dragón</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque porro voluptates asperiores repellat eaque? Doloremque, provident corrupti.</p>
+                        <p><span class="precio">S/. 21.90</span></p>
+                    </div>
+                </div>
+            </div>
+                
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="row lc-sopas">
+                <div class="col-12 text-center">
+                    <img src="img/black-dragon.svg" width="50%" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script>
+       var botonIrArriba = document.getElementById("btnIrArriba");
+
+        window.onscroll = function() {
+            if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
+                botonIrArriba.style.display = "block";
+                botonIrArriba.style.opacity = "1";
+            } else {
+                botonIrArriba.style.opacity = "0";
+                setTimeout(function() {
+                    botonIrArriba.style.display = "none";
+                }, 300); // Esperar a que termine la animación de opacidad antes de ocultar
+            }
+        };
+
+function irArriba() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+    </script>
+</body>
+</html>

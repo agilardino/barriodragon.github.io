@@ -1,10 +1,434 @@
-<html>
-  <head>
-    <title>Barrio Dragon</title>
-  </head>
-  <body>
-    <h1>HOla Mundo</h1>
-  </body>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="drfav.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="drfav.ico" type="image/x-icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.cdnfonts.com/css/roenksync" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/locomotive-scroll.min.css">
+    
+   <!-- <script src="js/barriomobile.js"></script>-->
+    <!-- 
+    *
+    *   NO he probado si este meta:
+    *   <meta name="apple-mobile-web-app-capable" content="yes">
+    *   desactiva la opción de que en tables como iPad, no te pida o te muestre la versión de desktop, sino que te redirija a la versión mobile. 
+    *
+    -->
+    
 
+    <title>Barrio Dragón</title>
+</head>
+<body>
+    <header>
+        <nav class="main-nav">
+            <div class="logo"><img src="img/LOGO.svg"  alt=""></div>
+            <div id="toggle-menu" class="hamburger-menu">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+            <ul id="main-menu" class="main-menu">
+                <li class="main-menu__item"><a href="carta.html" class="main-menu__link">Visita nuestra carta</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link"><span class="small">Síguenos en: </span> </a></li>
+                <li class="main-menu__item">
+                    <ul class="redes-sociales py-3">
+                        <li><a href="#" class="main-menu__link"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="" class="main-menu__link"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="" class="main-menu__link"><i class="fa-brands fa-tiktok"></i></a></li>
+                    </ul>
+                    
+                </li>
+               
+            </ul>
+        </nav>
+
+    </header>
+    <div class="reservas">
+        <p>RESERVAS</p>
+    </div>
+    
+    <video class="show smoke_video" preload autoplay="autoplay" loop="loop" playsinline muted>
+        <source src="img/smoke.mp4" type="video/mp4">
+    </video>
+    <div data-0="filter: alpha(opacity=80)" data-400="filter: alpha(opacity=0)" class="scroll">
+        <p>ver más</p>
+        
+    </div>
+   
+    <div class="container" data-scroll-container >
+        <!-- INICIO DE FRONTPAGE -->
+        
+        <section data-scroll-section>            
+            <div class="content" data-scroll-speed="1">
+                    <div class="carousel">
+                        <div class="frame_1">   
+                            <div class="frame_col_1">
+                                <p>abrimos todos los días</p>
+                                <a class="btn" href="carta.html">Ver Carta</a>
+                            </div>
+                            <div class="frame_col_2">
+                                <h2>un dragón con</h2>
+                                <h1>BARRIO</h1>
+                                <img class="frame_1_redline" src="img/red-line.png" alt="" />
+                                <p class="cuerpo-texto">Más de un siglo de una fusión totalmente mágica, podemos afirmar que esta es nuestra comida, nuestro legado. Somos un restaurante peruano con sabor oriental.
+                                     </p>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </section>
+        <!-- CIERRE DE FRONTPAGE -->
+        <!-- INICIO DE ERES BARRIO O SECCIÓN 2 -->
+        <section data-scroll-section>
+            <div class="content">
+                <div class="frame_2">
+                    <div class="frame_2_col_1">
+                        <div class="frame_2_image" data-scroll-speed="1" data-scroll-delay="0.25" data-scroll-position="left" data-scroll-direction="horizontal">                           
+                            <img  src="img/eres-barrio-main.png" alt="">
+                           
+                        </div>
+                    </div>
+                    <div class="frame_2_text custom-p">
+                        <div class="flex-column">
+                            <h2 id="barriodragon">¿y tú <br>eres barrio?</h2>                            
+                            <div><img src="img/mobile-chifa-1.png" width="320px"></div>
+                        </div>
+                    </div> 
+                    <!--<div class="frame_2_row">
+                        <img src="img/mobile-chifa-1.png" width="220px">
+                        <div>
+                                <img src="img/red-line.png" width="250px" alt="">
+                            </div>
+                    </div> -->
+                    <div class="frame_2_col_3">
+                        <p>El barrio marcó a muchas personas de una generación, y esto se está perdiendo. No queremos ser solo un restaurante, queremos ser parte de una historia que no podemos olvidar, queremos regresar a esa unión de amigos, familias, amigos familias que teníamos y que todavía tenemos.</p>
+                        <img src="img/alas-dragon.svg" alt="">
+                    </div>                   
+                </div>
+            </div>
+        </section >
+        <!-- CIERRE DE ERES BARRIO O SECCIÓN 2 -->
+        <!-- INICIO DE VISITA EL BARRIO  O SECCION 3-->
+        <section data-scroll-section>
+            <div class="content">
+                <div class="frame_3">
+                    <div class="frame_3_col_1" >
+                        <h2 id="visitabarrio">visita nuestro barrio</h2>
+                        <p id="parrafo">A la hora de comer siempre toda la familia debía estar presente. Nosotros comíamos en nuestra casa, comida casera, pero apenas llegaba el fin de semana, ¡uy!, salíamos a degustar esos platos que no se preparaban en casa. <br><br>
+                            Esos platos que no son caseros, pero saben a hogar.
+                        </p>
+                        
+                    </div>
+                    <div class="frame_3_col_2">
+                        <div class="vertical">
+                            
+                            <p>Lo que nos mueve</p></div>
+                       <img src="img/foto-chica1.jpg" alt="Visita nuestro barrio" />
+                      
+                    </div>
+                    <div class="frame_3_col_3">
+                        <img src="img/foto-larga1.jpg" alt="Visite nuestro barrio" />
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- CIERRE DE VISITA EL BARRIO O SECCION 3 -->
+
+        <!-- INICIO DE CARTA SECCION 4 -->
+        <section data-scroll-section>
+            <div id="carta" class="content">
+                <div class="frame_4">
+                    <div class="frame_4_col_1">
+                      <div class="scrollera" data-direction="top" data-speed="slow">
+                        <div class="scroller__inner">
+                            <img src="img/carta-1.png" alt="">
+                            <img src="img/carta-2.png" alt="">
+                            <img src="img/carta-3.png" alt="">
+                            <img src="img/carta-4.png" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="frame_4_col_2">
+                        <div class="la-carta-dragon">
+                       <img               
+                        src="img/barrio-dragon-iso.svg" width="280px" alt="Visita nuestra Carta">
+                        <h2>LA CARTA</h2>
+                        <h3>Barrio Dragón</h3>
+                        <a class="btn" href="carta.html">Ver Carta completa</a>
+                    </div>
+                    </div>
+                    <div class="frame_4_col_3">
+                        <div class="carta-main" >
+                            <h2 id="maspintados">Los más pintados</h2>
+                            <img src="img/red-line.png" width="250px" alt="">
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </section >
+        <!-- CIERRE DE CARTA SECCION 4 -->
+        <!-- INICIO DE SECCION LOS MAS PINTADOS-->
+        <section data-scroll-section>
+            <div class="content">
+                <div class="pintados-carta">
+                    
+                    <div  class="chaufa-dragon-1" id="chaufa">
+                        <div class="carta_menu">
+                            <p class="chaufa-dragon">arroz chaufa dragón</p>
+                            <p class="carta-descripcion">Cuenta la leyenda que los dragones fueron concebidos utilizando los mejores atributos de cada animal. Fue así como creamos nuestro arroz chaufa dragón.
+                            </p>
+                            <div class="menu-1">
+                               <figure>
+                                    <img src="img/ChaufaDragon-pic_1.jpg" alt=""></figure>
+                                    <figure>
+                                        <img src="img/ChaufaDragon-pic_2.jpg" alt=""></figure>
+                                       
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="fun-kin" id="pato-asado">
+                        <div class="carta_menu">
+                            <p class="chaufa-dragon">pato asado con nabo encurtido</p>
+                            <p class="carta-descripcion">Siguiendo la receta de hace más de una centuria, Barrio Dragón trae esta delicatessen: un pato asado con una piel sumamente crocante. 
+                            </p>
+                            <div class="menu-1">
+                               <figure>
+                                    <img src="img/PatoAsado-pic_1.jpg" alt=""></figure>
+                                    <figure>
+                                        <img src="img/PatoAsado-pic_2.jpg" alt=""></figure>
+                                       
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="kam-lu" id="kamlu">
+                        <div class="carta_menu">
+                            <p class="chaufa-dragon">kam lu wantan</p>
+                            <p class="carta-descripcion">Wantanes fritos navegando en salsa tamarindo, acompañados de chancho, pollo, langostinos, verduras, piña y sus huevitos de codorniz. </p>
+                            <div class="menu-1">
+                               <figure>
+                                    <img src="img/KamLuWantan-pic_1.jpg" alt=""></figure>
+                                    <figure>
+                                        <img src="img/KamLuWantan-pic_2.jpg" alt=""></figure>
+                                       
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="chancho-asado" id="chancho-asado">
+                        <div class="carta_menu">
+                            <p class="chaufa-dragon">tallarín taypa</p>
+                            <p class="carta-descripcion">Ahí, donde todos danzan, en el wok se juntan los mejores ingredientes para dar paso a este plato inigualable. Unos tallarines en el aire, cruzándose con trozos de filete de pollo, chancho, pato asado y langostinos.</p>
+                            <div class="menu-1">
+                               <figure>
+                                    <img src="img/TallarinTaypa-pic_1.jpg" alt=""></figure>
+                                    <figure>
+                                        <img src="img/TallarinTaypa-pic_2.jpg" alt=""></figure>
+                                       
+                            </div>
+                           
+                        </div>
+                    </div>
+                    <div class="tallarin-taypa" id="tallarin">
+                        <div class="carta_menu">
+                            <p class="chaufa-dragon">fun kin chong long</p>
+                            <p class="carta-descripcion">Enrollado empanizado de pollo, chancho, langostinos y champiñon, rodeado de verduras, champiñones y hongo chino, bañados en salsa con tausí.</p>
+                            <div class="menu-1">
+                               <figure>
+                                    <img src="img/FunKinChongLong-pic_1.jpg" alt=""></figure>
+                                    <figure>
+                                        <img src="img/FunKinChongLong-pic_2.jpg" alt=""></figure>
+                                       
+                            </div>
+                           
+                        </div>
+                    </div>
+                   
+                    
+
+                </div>
+            </div>
+        </section>
+
+        <!-- 
+            SE GUARDA ESTA SECCION EN CASO NO FUNCIONE
+            
+            <section data-scroll-section>
+            <div class="content">
+                <div class="pintados-carta-2">
+            <div class="chancho-asado">
+                <div class="carta_menu">
+                    <p class="chaufa-dragon">tallarín taypa</p>
+                    <p class="carta-descripcion">Ahí, donde todos danzan, en el wok se juntan los mejores ingredientes para dar paso a este plato inigualable. Unos tallarines en el aire, cruzándose con trozos de filete de pollo, chancho, pato asado y langostinos.</p>
+                    <div class="menu-1">
+                       <figure>
+                            <img src="img/TallarinTaypa-pic_1.jpg" alt=""></figure>
+                            <figure>
+                                <img src="img/TallarinTaypa-pic_2.jpg" alt=""></figure>
+                               
+                    </div>
+                   
+                </div>
+            </div>
+            <div class="tallarin-taypa">
+                <div class="carta_menu">
+                    <p class="chaufa-dragon">fun kin chong long</p>
+                    <p class="carta-descripcion">Enrollado empanizado de pollo, chancho, langostinos y champiñon, rodeado de verduras, champiñones y hongo chino, bañados en salsa con tausí.</p>
+                    <div class="menu-1">
+                       <figure>
+                            <img src="img/FunKinChongLong-pic_1.jpg" alt=""></figure>
+                            <figure>
+                                <img src="img/FunKinChongLong-pic_2.jpg" alt=""></figure>
+                               
+                    </div>
+                   
+                </div>
+            </div>
+        </div>
+        </div>
+        </section>-->
+
+
+        <!-- INICIO DE INGREDIENTES SECCION 5 -->
+        <section data-scroll-section>
+            <div class="content" style="background-color: #000;">
+                
+                <div class="frame_5">
+                        <div  class="frame_5_col_1">
+                            <div class="ingredientes-texto" id="losbravos">
+                                    
+                                    <h2>Los bravos del Barrio</h2>
+                                    <p>En el barrio le pusimos harto “punche” para hacer los mejores tragos del mundo mundial, ¡y lo logramos! Creamos un 'tono' increíble uniendo la carambola, el lychee, la tuna, la granadilla, el limón y la mandarina, perfumándolos con ron, sake, vodka, pisco, matacuy y aquará. <b>¡Un éxito total!</b></p>
+                                    <img class="py-5" src="img/alas-dragon.svg" width="30px" alt="Nuestros ingresdientes">
+                            </div>
+                        </div>
+                            
+                                                        
+                            <div class="frame_5_col_2">
+                                <div class="imagen-cocinero">
+                                    <div class="vertical">
+                                        <p>Nuestro Barrio</p>
+                                    </div>
+                                    <img  src="img/foto-chica2.jpg" alt="">
+                                </div>
+                                   
+                            </div>
+                            <div class="frame_5_col_3">
+                                <div class="imagen-cerveza">
+
+                                    <img class="pt-5" src="img/foto-larga2.jpg" alt="Nuestros ingredientes">
+                                </div>
+    
+                            </div>
+
+                </div>
+          
+            </div>
+        </section>
+        <!-- CIERRE DE INGREDIENTES SECCION 5 -->
+        <!-- FOOTER O CIERRE -->
+        <section data-scroll-section>
+            <div class="content">
+                <div class="frame_6">
+                    <div class="frame_6_col_1">   
+                        <div class="salida">
+                            <p>te esperamos en el barrio</p>
+                          </div>                  
+                        <img src="img/carta-menu.png" width="750px" alt="">
+                        <h4 class="py-3">Barrio Dragón <br> Av. 28 de julio 1420. Miraflores. Lima.</h4>
+                        <p>Abrimos todos los días de 12 m. a 9:30 p.m. <br> Cerramos los miércoles.</p>
+                    
+                    </div>               
+                    <div class="frame_6_col_2"> 
+                        <div class="wrapper">
+                        <img src="img/logo-vertial.svg" width="250px" alt="Barrio Dargón "> 
+                        <ul class="redes-sociales py-3" style="padding-left: 0;">
+                            <li><i class="fa-brands fa-facebook"></i></li>
+                            <li><i class="fa-brands fa-instagram"></i></li>
+                            <li><i class="fa-brands fa-tiktok"></i></li>
+                        </ul>               
+                        <p class="py-1">También encuéntranos en:</p>
+                        <img class="py-2" src="img/Rappi.png" width="80px" alt="Rappi">                        
+                        
+                        <div class="horizontal-line">
+                            <p>Terminos y condiciones</p>
+                            <p>Libro de reclamaciones</p>
+                            
+                            
+                        </div>
+                    </div>
+                    </div> 
+                    
+                </div>
+            </div>
+        </section>
+        <!-- FIN DE FOOTER-->
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+   <!-- <script type="text/javascript" src="js/skrollr.js"></script>-->
+   <script src="js/locomotive-scroll.min.js"></script>
+   <!-- Animación.js es donde se guarda la animación de cada uno de los elementos creados -->
+   <script src="js/animacion.js"></script> 
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
   
+   <script src="js/app.js"></script>
+    <script>     
+        const hamburgerMenu = document.querySelector('.hamburger-menu');
+        const lines = document.querySelectorAll('.line');
+
+        hamburgerMenu.addEventListener('click', () => {
+            lines.forEach((line, index) => {
+                gsap.to(line, {
+                    duration: 0.5,
+                    y: index % 2 === 0 ? 10 : -10,
+                    rotation: index % 2 === 0 ? 45 : -45,
+                    ease: 'bounce',
+                    onComplete: () => {
+                        gsap.to(line, {
+                            duration: 0.5,
+                            y: 0,
+                            rotation: 0,
+                            ease: 'bounce',
+                        });
+                    },
+                });
+            });
+        });
+        const toggleMenuElement = document.getElementById('toggle-menu');
+        const mainMenuElement = document.getElementById('main-menu');
+        toggleMenuElement.addEventListener('click', () => {
+            mainMenuElement.classList.toggle('main-menu--show');
+        });
+
+
+// Con este código inicias el LocomotiveScroll es el mismo que usa la pagina de ejemplo 59.com, la cual parece que ya no funciona en ningún navegador.
+
+const scroll = new LocomotiveScroll({
+    el: document.querySelector('[data-scroll-container]'),
+    smooth: true,
+    direction: "horizontal", // Esto hace que la pagina se mueva horizontalmente
+    initClass: "has-scroll-init",
+    lerp: 0.25,
+    
+});
+    
+    </script>
+
+
+<!--
+*
+*   El archivo animacion.js contiene la animación para que los elementos puedan verse a medida que se hace scroll.
+*   Estos elementos funcionan con la propiedad js:  IntersectionObserver, lo puedes modificar a gusto.
+*   
+-->
+</body>
 </html>
