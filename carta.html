@@ -8,290 +8,1041 @@
     <link rel="stylesheet" href="css/estilos.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     <title>Barrio Dragón - La Carta</title>
-    <style>
-          /* Estilo básico para el botón */
-          #btnIrArriba {
-            display: none;
-            position: fixed;
-            bottom: 20px;
-            right: 20px;
-            background-color: #a01c1c;
-            color: #fff;
-            border: none;
-            border-radius: 100%;
-            padding: 15px 20px;
-            cursor: pointer;
-            z-index: 1;
-            opacity: 0; /* Hacer el botón inicialmente transparente */
-            transition: opacity 0.3s ease-in-out; /* Agregar transición de opacidad */
-        }
 
-        /* Estilo del botón al pasar el ratón sobre él */
-        #btnIrArriba:hover {
-            background-color: #a01c1c;
-        }
-        .fa-solid {
-            font-size: 1.25rem;
-        }
-    </style>
 </head>
-<body>
-    <button onclick="irArriba()" id="btnIrArriba" title="Ir Arriba"><i class="fa-solid fa-arrow-up"></i></button>
-
+<body id="top">
+   <span class="ir-arriba"><a href="#top"><i class="bi bi-arrow-up-circle-fill"></i></a></span>
     <header>
         <div class="container">
             <div class="row">
                 <div class="col-12 col-lg-12 cabecera">
-                    <img src="img/la-carta/header.png" alt="">            
+                    <img class="img-fluid" src="img/la-carta/header-carta.png" alt="">            
                 </div>
             </div>
             <div class="row">
                 <div class="col-12" style="background-color: black;">
-                    <h2 class="text-center"><strong>La Carta</strong></h2>
-                </div>
-            </div>
+                    <h2 class="text-center">la carta</h2>
                 </div>
             </div>
         </div>
+        
     </header>
-    <nav class="container">
-        <div class="row items-carta">
-            <ul class="col-12  text-center">
-                <li>Las sopas</li>
-                <li>Piqueos y acompañamientos</li>
-                <li>los arroces</li>
-                <li>los tallarines</li>
-                <li>las carnes</li>
-                <li>los especiales</li>
-                <li>las tortillas</li>
-                <li>los vegetarianos</li>
-                <li>los combos personales</li>
-                <li>los combos familiares</li>
-                <li>las bebidas</li>
-            </ul>
+    <nav> 
+        <div class="container">
+            <div class="row items-carta">
+                <div class="col-12 text-center menu d-flex">
+                    <a href="#las-sopas">sopas</a>
+                    <a href="#los-piqueos">Piqueos y acompañamientos</a>
+                    <a href="#arroces">arroces</a>
+                    <a href="#tallarines">tallarines</a>
+                    <a href="#pollo">pollo</a>
+                    <a href="#pato">pato asado</a>
+                    <a href="#chancho">chancho asado</a>
+                    <a href="#especiales">platos especiales</a>
+                    <a href="#tortillas">tortillas</a>
+                    <a href="#vegetariano">vegetarianos</a>
+                    <a href="#combo-personal">dragón personal</a>
+                    <a href="#combo-familia">dragón familia</a>
+                    <a href="#postres">postres</a>
+                    <a href="#bebidas">bebidas</a>
+                </div>
+            </div>
         </div>
-
     </nav>
+    <!-- ZONA LA SOPAS -->
     <section id="las-sopas">
-        <div class="container lc-sopas">
+        <div class="container lc-generales">
             <div class="row">
-                <div class="col-12 py-5">
+                <div class="col-12 py-3">
                     <picture>
-                        <source media="(max-width: 768px)" srcset="img/la-carta/las-sopas.png">
-                    <img src="img/la-carta/las-sopas-110w.png" alt="">
-                </picture>
+                        <!--<source media="(max-width: 768px)" srcset="img/la-carta/las-sopas.png">-->
+                        <img src="img/la-carta/Foto-desktop_sopas.jpg" alt="">
+                    </picture>
+                    <div class="col-12 text-center fondo-rojo d-flex justify-content-center align-items-center">
+                        <h3 >Sopas</h3>
+                    </div>
                 </div>
             </div>
-            <div class="row lc-sopas">         
-                 <div class="col-12 col-md-4 text-center py-3">
+            <div class="row">         
+                 <div class="col-12 text-center pt-5">
                     <h3>Sopa Wantán</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                    <p>La mejor acompañante con los mejores wantanes del Perú, filetes de pollo, chancho asado, verduras y unas alitas de yapa.</p>
                     <p><span class="precio">S/. 21.90</span></p>
                 </div>
-                <div class="col-12 col-md-4 text-center">
+                <div class="col-12 text-center py-5">
                     <h3>Sopa Wantán Especial</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                    <p>La hicimos única, agregando más amor, langostinos y huevitos de codorniz. ¡La más rica!</p>
                     <p><span class="precio">S/. 21.90</span></p>
                 </div>
             </div>
             <div class="row">
-                <div class="display-carta col-12">
-                    <div class="carta-menu">
-                      <img src="img/la-carta/sopa-1.png" alt="">
-                    </div>
-                    <div class="cuerpo">
-                        <img src="img/alas-dragon.svg" alt="">
-                      <h2 class="nombre-menu">sopa siu kao</h2>
-                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque porro voluptates asperiores repellat eaque? Doloremque, provident corrupti.</p>
-                      <p><span class="precio">S/. 21.90</span></p>
-                    </div>
-            </div>
-            <div class="row">
-                <div class="col-12 col-md-6 text-center">
-                    <h3>Sopa Wantán</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
-                    <p><span class="precio">S/. 21.90</span></p>
-                </div>
-                <div class="col-12 col-md-6 text-center">
-                    <h3>Sopa Wantán Especial</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
-                    <p><span class="precio">S/. 21.90</span></p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="los-piqueos">
-        <div class="container lc-sopas">
-            <div class="row ">
-                <div class="col-12 py-5">
-                    <picture>
-                        <source media="(max-width: 600px)" srcset="img/la-carta/piqueos.png">
-                    <img src="img/la-carta/piqueos-110w.png" alt="">
-                </picture>
-                </div>
-            </div>
-            <div class="row lc-sopas" >
-                <div class="col-12 col-md-3 text-center">
-                    <h3>Sopa Wantán Especial</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
-                    <p><strong>12 wantanes</strong><br><span class="precio">S/ 25.00</span></p>
-                    <p><strong>06 wantanes</strong><br><span class="precio">S/12.90</span></p>
-                </div>
-                <div class="col-12 col-md-3 text-center">
-                    <h3>Nabo encurtido</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
-                    <p><span class="precio">S/ 14.90</span></p>
-                    <p><strong>Media porción</strong><br><span class="precio">S/7.90</span></p>
-                </div>
-                <div class="col-12 col-md-3 text-center">
-                    <h3>Siu mai</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
-                    <p><span class="precio">S/ 14.90</span></p>
-                    
-                </div>
-            </div>
-            <div class="row lc-sopas">
-                <div class="display-carta col-12 px-4">
+                    <div class="display-carta col-12">
                         <div class="carta-menu">
-                          <img src="img/la-carta/siumai.jpg" alt="">
+                            <img src="img/la-carta/sopa-1.png" alt="Sopa Wantán">
                         </div>
                         <div class="cuerpo">
                             <img src="img/alas-dragon.svg" alt="">
-                            <h2 class="nombre-menu">Siu Mai</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque porro voluptates asperiores repellat eaque? Doloremque, provident corrupti.</p>
+                            <h2 class="nombre-menu">sopa siu kao</h2>
+                            <p>Este es un siuuuu conocido, un gol de media cancha, festejemos en lo alto esta sopita goleadora.</p>
                             <p><span class="precio">S/. 21.90</span></p>
                         </div>
                     </div>
-                <div class="col-12 col-md-3 text-center">
-                        <h3>Siu Kao</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
-                        <p><span class="precio">S/ 25.00</span></p>
-                        
+            </div>
+            <div class="row">
+                <div class="col-12 text-center pt-5">
+                    <h3>Sopa Kaypiton</h3>
+                    <p>La simplicidad de una caricia, con perfumes de gengibre. El fideíto del barrio.</p>
+                    <p><span class="precio">S/. 21.90</span></p>
+                </div>
+                <div class="col-12 text-center py-5">
+                    <h3>Sopa Fuchifú</h3>
+                    <p>Con un poco más de cuerpo, aromatizada con aceite de ajonjolí, la guapetona del barrio.</p>
+                    <p><span class="precio">S/. 21.90</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- FIN DE LAS SOPAS -->
+    <!-- ZONA PIQUEOS -->
+    <section id="los-piqueos">
+        <div class="container lc-generales">
+            <div class="row">
+                <div class="col-12 pt-5">
+                    <picture>
+                        <!--<source media="(max-width: 600px)" srcset="img/la-carta/piqueos.png">-->
+                        <img src="img/la-carta/Foto-desktop_piqueos.jpg" alt="">
+                    </picture>                    
+                    <div class="col-12 text-center fondo-rojo">
+                        <h3>piqueos y acompañamientos</h3>
                     </div>
-                    <div class="col-12 col-md-3 text-center">
-                        <h3>Chicharrón de Pollo</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                </div>
+                
+            </div>
+            <div class="row">
+                <div class="col-12 text-center pt-5">
+                    <h3>Wantán Frito</h3>
+                    <p>Como dicen que “lo importante es lo de adentro” lo dimos todo. Tremendo wantán lo mejor del barrio.</p>
+                    <p><strong>12 wantanes</strong><br><span class="precio">S/ 25.00</span></p>
+                    <p><strong>06 wantanes</strong><br><span class="precio">S/12.90</span></p>
+                </div>
+                <div class="col-12 text-center pt-5">
+                    <h3>Nabo encurtido</h3>
+                    <p>Lo justo para equilibrar los sabores: un toque agridulce y la frescura de unos cortes de ají amarillo. Todo un bouquet.</p>
+                    <p><span class="precio">S/ 14.90</span></p>
+                    <p><strong>Media porción</strong><br><span class="precio">S/7.90</span></p>
+                </div>
+                <div class="col-12 text-center py-5">
+                    <h3>Siu mai</h3>
+                    <p>En china y en otros países los llaman -dim sum- “el que toca el corazón”. Bueno, este sí lo toca.</p>
+                    <p><span class="precio">S/ 14.90</span></p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="display-carta col-12 px-4">
+                        <div class="carta-menu">
+                            <img src="img/la-carta/pic-circularchico_chicharron.png" alt="">
+                        </div>
+                        <div class="cuerpo">
+                            <img src="img/alas-dragon.svg" alt="">
+                            <h2 class="nombre-menu">Chicharrón de Pollo </h2>
+                            <p> Filete de pollo frito perfumado con canela china y aroma de nuestro pisco. ¡Listo para el tono!</p>
+                            <p><span class="precio pt-1">S/. 21.90</span></p>
+                        </div>
+                </div>
+                <div class="col-12 text-center pt-5">
+                        <h3>Siu Kao frito</h3>
+                        <p>Crujiente por fuera y muy tierno por dentro, resaltando así el sabor de la panceta y langostino.</p>
                         <p><span class="precio">S/ 14.90</span></p>
                         
-                    </div>
-                    <div class="col-12 col-md-3 text-center">
-                        <h3>Chicharron de Alitas</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
+                </div>
+                <div class="col-12 text-center py-5">
+                        <h3>Chicharrón de Alitas</h3>
+                        <p>Ala izquierda y ala derecha, las mejores del vecindario.</p>
                         <p><span class="precio">S/ 14.90</span></p>
                         
-                    </div>
+                </div>
             </div>
 
         </div>
     </section>
+    <!-- FIN PIQUEOES-->
+    <!-- ARROCES -->
     <section id="arroces">
-        <div class="container-md">
+        <div class="container lc-generales">
             <div class="row">
+                <div class="col-12 py-3">
+                    <picture>
+                        <!-- <source media="(max-width: 768px)" srcset="img/la-carta/arroces.png">-->
+                        <img src="img/la-carta/Foto-desktop_arroz.jpg" alt="La Carta Dragón -  Arroces">
+                    </picture> 
+                    <div class="col-12 text-center fondo-rojo">
+                        <h3>arroces</h3>
+                    </div>               
+                </div>
+                <div class="col-8 offset-2">
+                    <p class="fs-3 text-center">El mejor pata del barrio, el que nunca debe faltar. <strong>¡Siempre acompañado de las mejores carnes!</strong></h4>
+                </div>
+            </div>
+            <div class="row pt-5 d-flex align-items-center py-5">
+                <div class="col-12 text-center px-4">
+                    <h3>aeropuerto dragón</h3>
+                    <p>Llegó de la carretilla al vecindario y ahora es parte de nuestro barrio. <br>El chaufa más bravo, con trozos de pollo, tallarín y coronado con tiras de wantán frito.</p>
+                    <p><span class="precio">S/ 24.90</span></p>
+                    
+                </div>
+                <div class="display-carta col-12 px-4 mt-3">
+                    <div class="carta-menu">
+                      <img src="img/la-carta/pic-circularchico_chaufadragon.png" alt="">
+                    </div>
+                    <div class="cuerpo">
+                        <img src="img/alas-dragon.svg" alt="">
+                        <h2 class="nombre-menu">arroz Chaufa Dragón</h2>
+                        <p>El más bacán, creación única del barrio; la frescura del holantao, el frijolito chino, hongo chino, toques dulces del pimiento rojo, trozos de filete de pollo y champiñón, flambeados con un toque de aceite de ajonjolí.</p>
+                        <p><span class="precio">S/. 24.90</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 d-flex justify-content-between align-items-center  pt-1 flex-column">
+                    <h4>chaufa con pollo</h4>
+                    <span class="precio">S/. 21.90</span>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center pt-5 flex-column">
+                    <h4>chaufa con chancho ahumado</h4>
+                    <span class="precio">S/. 23.90</span>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center pt-5 flex-column">
+                    <h4>chaufa especial</h4>
+                    <span class="precio">S/. 24.90</span>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center pt-5 flex-column">
+                    <h4>chaufa con langostinos</h4>
+                    <span class="precio">S/. 27.90</span>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center pt-5 flex-column">
+                    <h4>chaufa con pato</h4>
+                    <span class="precio">S/. 27.90</span>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center pt-5 flex-column">
+                    <h4>chaufa con carne</h4>
+                    <span class="precio">S/. 27.90</span>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center py-5 flex-column">
+                    <h4>arroz blanco</h4>
+                    <span class="precio">S/. 7.90</span>
+                </div>
+                
+            </div>
+            </div>
+    </section>
+    <!-- FIN SECCION ARROCES-->
+    <!-- ZONA TALLARINES -->
+    <section id="tallarines">
+        <div class="container lc-generales">
+            <div class="row">
+                <div class="col-12">
+                    
+                    <picture>
+                       <!-- <source media="(max-width: 768px)" srcset="img/la-carta/arroces.png">-->
+                        <img src="img/la-carta/Foto-desktop_tallarines.jpg" alt="">
+                    </picture>
+                    <div class="col-12 fondo-rojo text-center">
+                        <h3>tallarines</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-10 offset-sm-1">
+                    <p class="fs-4 text-center py-4">En el wok se juntan los mejores ingredientes para dar paso a este plato inigualable. Trozos de filete de pollo, chancho, pato asado y langostinos, todos unidos en un fuego flameador, entrelazados con verduras en su punto.</h4>
+                </div>
+                <div class="display-carta col-12 px-4">
+                    <div class="carta-menu">
+                      <img src="img/la-carta/pic-circularchico_tallarintaypa.png" alt="">
+                    </div>
+                    <div class="cuerpo">
+                        <img src="img/alas-dragon.svg" alt="">
+                        <h2 class="nombre-menu">Tallarín Taypa</h2>
+                        <p>Hecho para el más carnívoro de todos. Filete de pollo, chancho asado, pato asado, langostino y verduras flameadas acompañándolos, para perfumarlos.</p>
+                        <p><span class="precio">S/. 21.90</span></p>
+                    </div>
+                </div>
+            </div>
+            <div class="row py-4">
+                <div class="col-12  d-flex justify-content-between align-items-center pt-3 flex-column">
+                    <h4>tallarín con pollo</h4>
+                    <span class="precio">S/. 36.90</span>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center pt-5 flex-column">
+                    <h4>tallarín con chancho ahumado</h4>
+                    <span class="precio">S/. 41.90</span>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center  pt-5 flex-column">
+                    <h4>tallarín con pato</h4>
+                    <span class="precio">S/. 45.90</span>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center  pt-5 flex-column">
+                    <h4>tallarín con langostinos</h4>
+                    <span class="precio">S/. 48.90</span>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center  pt-5 flex-column">
+                    <h4>chaufa con pollo en trozos</h4>
+                    <span class="precio">S/. 40.90</span>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center  pt-5 flex-column">
+                    <h4>tallarín con carne</h4>
+                    <span class="precio">S/. 41.90</span>
+                </div>
+                
+            </div>
+        </div>    
+    </section>  
+    <!-- FIN DE TALLARINES --> 
+    <!-- POLLOS -->
+    <section id="pollo"> 
+        <div class="container lc-generales">    
+            <div class="row">
+                <div class="col-12 py-3">
+                    <picture>
+                        <!--<source media="(max-width: 768px)" srcset="img/la-carta/arroces.png">-->
+                        <img src="img/la-carta/Foto-desktop_pollo.jpg" alt="La Carta Dragón -  Pollos">
+                    </picture> 
+                    <div class="col-12 text-center fondo-rojo">
+                        <h3>pollo</h3>
+                    </div>               
+                </div>
+            </div>
+            <div class="row pt-5">
+                
+                <div class="col-12 text-center ">
+                    <h3>Pollo chi jau kay</h3>
+                    <p>El de siempre, Filetes de pollo frito bañado en salsa de ostión. Servido con cashues y cebollita china. De los más pedidos del barrio. ¡Ya tú sa!</p>
+                    <p><span class="precio">S/ 35.90</span></p>
+                    
+                </div>
+                <div class="display-carta col-12 py-3">
+                    <div class="carta-menu">
+                        <img src="img/la-carta/pic-circularchico_polloentrozos.png" alt="">
+                    </div>
+                    <div class="cuerpo">
+                        <img src="img/alas-dragon.svg" alt="">
+                        <h2 class="nombre-menu">Pollo en trozos con verduras</h2>
+                        <p>Pollo salteado con verduras, flameados con salsa de ostión, sillao y un toque de pisco.</p>
+                        <p><span class="precio">S/. 36.90</span></p>
+                    </div>
+                </div>
+                <div class="col-12 text-center pt-5">
+                    <h3>Pollo en trozos con tausí</h3>
+                    <p>Pollo trozado, salteados con holantao, frijolito chino, pimientos y kion en salsa tausí.</p>
+                    <p><span class="precio">S/ 36.90</span></p>
+                    
+                </div>
+                <div class="col-12 text-center pt-5">
+                    <h3>Pollo al ajo</h3>
+                    <p>Filete a la plancha en trozos, salteados con verduras, perfumados con ajos finamente cortados.</p>
+                    <p><span class="precio">S/ 33.90</span></p>
+                    
+                </div>
+                <div class="col-12 text-center pt-5">
+                    <h3>Pollo enrollado con espárragos</h3>
+                    <p>Filete de pollo trozado, salteados con holantao, frijolito chino, pimientos y kion bañados en salsa tausí.</p>
+                    <p><span class="precio">S/ 14.90</span></p>
+                    
+                </div>
+                <div class="col-12 text-center pt-5">
+                    <h3>Pollo ti pa kay</h3>
+                        <p>Pollo arrebozado en trozos con piña, verduras chinas, bañadas en salsa tamarindo.</p>
+                        <p><span class="precio">S/. 21.90</span></p>
+                    
+                </div>  
+                
+                
+            </div>
+                
+        </div>
+    </section>
+   <!-- FIN DE POLLOS --> 
+   <!-- Los asados -->
+   <section id="pato">
+        <div class="container lc-generales">
+            <div class="row pt-5">
+                <div class="col-12 py-3">
+                
+                    <picture>
+                        <!--<source media="(max-width: 768px)" srcset="img/la-carta/arroces.png">-->
+                        <img src="img/la-carta/Foto-desktop_pato.jpg" alt="">
+                    </picture>
+                    <div class="col-12 fondo-rojo text-center">
+                        <h3>Pato asado</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1">
+                    <p class="fs-4 text-center">En el barrio, cuando alguien está molesto, decimos que está 'asado'. Pero en este caso, estos asados los van a poner <b>¡recontra felices!</b></p>
+                </div>
+            </div>
+            <div  class="row pt-5">          
+                <div class="col-12 d-flex justify-content-between align-items-center flex-column">
+                    <h4>pato asado con nabo encurtido</h4>
+                    <span class="precio">S/. 49.90</span>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center flex-column pt-5">
+                    <h4>pato asado con verduras</h4>
+                    <span class="precio">S/. 49.90</span>
+                </div>
+                <div class="col-12  d-flex justify-content-between align-items-center flex-column pt-5">
+                    <h4>pato asado con tamarindo</h4>
+                    <span class="precio">S/. 49.90</span>
+                </div>
+            </div>
+        </div>
+   </section>
+   <section  id="chancho" >
+        <div class="container lc-generales">
+            <div class="row pt-5">
+                <div class="col-12 py-3">
+                
+                    <picture>
+                        <!--<source media="(max-width: 768px)" srcset="img/la-carta/arroces.png">-->
+                        <img src="img/la-carta/Foto-desktop_chancho.jpg" alt="">
+                    </picture>
+                    <div class="col-12 fondo-rojo text-center">
+                        <h3>chancho asado</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">        
+                <div class="col-12 d-flex justify-content-between align-items-center flex-column">
+                    <h4>chancho asado con nabo encurtido</h4>
+                    <span class="precio">S/. 38.90</span>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center pt-5 flex-column">
+                    <h4>chancho asado al ajo</h4>
+                    <span class="precio">S/. 38.90</span>
+                </div>
+                <div class="col-12  d-flex justify-content-between align-items-center pt-5 flex-column">
+                    <h4>chancho asado con tamarindo</h4>
+                    <span class="precio">S/. 38.90</span>
+                </div>
+                <div class="col-12  d-flex justify-content-between align-items-center pt-5 flex-column">
+                    <h4>chancho asado con verduras</h4>
+                    <span class="precio">S/. 38.90</span>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- Cierre de los asados-->
+<!-- Inicio de los especiales-->
+    <section id="especiales">
+        <div class="container lc-generales">
+            <div class="row pt-5">
+                <div class="col-12 py-3">                
+                    <picture>
+                        <!--<source media="(max-width: 768px)" srcset="img/la-carta/arroces.png">-->
+                        <img src="img/la-carta/Foto-desktop_especiales.jpg" alt="">
+                    </picture>
+                    <div class="col-12 fondo-rojo text-center">
+                        <h3>Los especiales del barrio</h3>
+                    </div>
+                </div>
+                <div class="col-12 col-md-10 offset-md-1">
+                    <p class="fs-3 text-center">Acá los mejores platos para el “richi” donde puedes venir cuando quieras en cualquier “facha” y disfrutarlos, <b>mi barrio, es tu barrio.</b></p>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="display-carta col-12 py-3">
+                    <div class="carta-menu">
+                    <img src="img/la-carta/pic-circularchico_kamluwantan.png" alt="Kam Lu wantan - Barrio Dragón">
+                    </div>
+                    <div class="cuerpo">
+                        <img src="img/alas-dragon.svg" alt="">
+                        <h2 class="nombre-menu">Kam lu wantán</h2>
+                        <p>Wantanes fritos navegando en salsa tamarindo, acompañados de chancho, pollo, langostinos, verduras, piña y sus huevitos de codorniz.</p>
+                        <p><span class="precio">S/. 53.90</span></p>
+                    </div>
+                </div>
+                <div class="col-12 text-center pt-4">
+                    <h3>Kay ten</h3>
+                    <p>El rey de los salteados, pollo, chancho asado, pato asado, langostinos, enrollado Fun Kin Kay, hongos chinos y champiñones. Acompañados de una variedad de verduras, todos saliendo de las fauces de nuestro dragón.</p>
+                    <p><span class="precio">S/ 52.90</span></p>
+                    
+                </div>
+                <div class="col-12 text-center pt-5">
+                    <h3>Pollo Cru Kay</h3>
+                    <p>Filete de pollo empanizado, flameado con piña y verduras bañados con salsa de ostión.</p>
+                    <p><span class="precio">S/ 41.90</span></p>
+                    
+                </div>
+                <div class="col-12 text-center pt-5">
+                    <h3>Pollo 5 sabores</h3>
+                    <p>Filete de pollo salteado con verduras, perfumados con nabo, kion y huevo. Bañados en salsa tamarindo, con un toque de salsa inglesa.</p>
+                    <p><span class="precio">S/ 41.90</span></p>
+                    
+                </div>
+                <div class="col-12 text-center pt-5 pb-3">
+                    <h3>Carne con verduras</h3>
+                    <p>Carne de res finamente cortada con verduras, flameados con salsa de ostión y sillao, perfumados con un toque de pisco.</p>
+                    <p><span class="precio">S/ 46.90</span></p>
+                    
+                </div>
+                <div class="display-carta col-12 py-3">
+                    <div class="carta-menu">
+                        <img src="img/la-carta/pic-circularchico_funkingchonglong.png" alt="Fun Kin chong long - Barrio Dragón">
+                    </div>
+                    <div class="cuerpo">
+                        <img src="img/alas-dragon.svg" alt="">
+                        <h2 class="nombre-menu">Fun kin chong long</h2>
+                        <p>Enrollado empanizado de pollo, chancho, langostinos, champiñón, verduras y hongo chino. Bañados en salsa con tausí.</p>
+                        <p><span class="precio">S/. 51.90</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section> 
+   <!-- cierre de los especiales-->
+   <!-- inicio de tortillas-->
+    <section id="tortillas">
+        <div class="container lc-generales">
+            <div class="row pt-5">
+                <div class="col-12 py-3">
+                    <picture>
+                        <!--<source media="(max-width: 768px)" srcset="img/la-carta/arroces.png"> -->
+                        <img src="img/la-carta/Foto-desktop_tortilla.jpg" alt="">
+                    </picture>
+                    <div class="col-12 fondo-rojo text-center">
+                        <h3>tortillas</h3>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p class="fs-4 text-center">Nuestras mejores carnes abrazadas de verduras, cobijadas en nuestras tortillas.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 pt-5 d-flex justify-content-between align-items-center flex-column">
+                    <h4>tortilla de pollo</h4>
+                    <span class="precio">S/. 25.90</span>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center pt-5 flex-column">
+                    <h4>tortilla de chancho asado</h4>
+                    <span class="precio">S/. 28.90</span>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center pt-5 flex-column">
+                    <h4>tortiall de pato asado</h4>
+                    <span class="precio">S/. 29.90</span>
+                </div>
+                <div class="col-12 d-flex justify-content-between align-items-center pt-5 flex-column">
+                    <h4>tortilla de langostinos</h4>
+                    <span class="precio">S/. 28.90</span>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- cierre de tortillas-->
+    <!-- incio de vegetarianos-->
+<section id="vegetariano">
+    <div class="container lc-generales">
+        <div class="row py-3">
+            <div class="col-12">
+                <!--<picture>
+                    <source media="(max-width: 768px)" srcset="img/la-carta/arroces.png"> 
+                    <img src="img/la-carta/de" alt="">
+                </picture> -->
+                <div class="col-12 text-center fondo-rojo">
+                    <h3>VEGETARIANOS</h3>
+                </div>
+            </div>
+        </div>
+            <div class="row pt-5">
+                <div class="col-12 text-center" >
+                    <h3>Wantán Frito</h3>
+                    <p>Los mismos de siempre, pero con tofú, champiñones, col china, hongos y verduras.</p>
+                    <p><strong>12 wantanes</strong><br><span class="precio">S/ 21.90</span></p>
+                    <p><strong>06 wantanes</strong><br><span class="precio">S/12.90</span></p>
+                    
+                </div>
+                <div class="col-12 text-center pt-5">
+                    <h3>Sopa vegetariana</h3>
+                    <p>Con huevitos de codorniz, fideos y verduras perfumados con aceite de ajonjolí.</p>
+                    <p><span class="precio">S/ 18.90</span></p>
+                    
+                </div>
+                <div class="col-12 text-center pt-5">
+                    <h3>Salteado vegetariano</h3>
+                    <p>Verduras salteadas con tofu, bañados en salsa de ostión.</p>
+                    <p><span class="precio">S/ 32.90</span></p>
+                    
+                </div>
+                <div class="col-12 text-center pt-5">
+                    <h3>Chaufa vegetariano </h3>
+                    <p>Arroz frito con champiñones, verduras, frijolito y hongos chinos.</p>
+                    <p><span class="precio">S/ 20.90</span></p>
+                    
+                </div>
+                <div class="col-12 text-center pt-5">
+                    <h3>Tallarín vegetariano</h3>
+                    <p>Tallarines salteados con tofu, champiñones y verduras chinas.</p>
+                    <p><span class="precio">S/ 32.90</span></p>
+                    
+                </div>
+                <div class="col-12 text-center pt-5">
+                    <h3>Tortilla vegetariana</h3>
+                    <p>Champiñones y verduras salteadas abrazadas en nuestra tortilla.</p>
+                    <p><span class="precio">S/ 23.90</span></p>
+                    
+                </div>
+            </div>
+    </div>
+</section>
+    <!-- fin de vegetarianos-->
+    <!-- Inicio de combos personales -->
+    <section id="combo-personal">
+        <div class="container lc-generales">
+            <div class="row pt-5">
+                <div class="col-12 py-3">                
+                    <picture>
+                        <!--<source media="(max-width: 768px)" srcset="img/la-carta/arroces.png">-->
+                        <img src="img/la-carta/Foto-desktop_combopersonal.jpg" alt="">
+                    </picture>
+                    <div class="col-12 fondo-rojo text-center">
+                        <h3>dragón personal</h3>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p class="fs-4 text-center">Unos combos listos para saciar el hambre de un estómago que parecen dos.</p>
+                </div>
+            </div>
+            <div class="row py-5">
+                <div class="col-12  d-flex justify-content-between align-items-center flex-column">
+                    <h4>chijaukay + chaufa de pollo + 02 wantanes</h4>
+                    <span class="precio">S/. 24.90</span>
+                </div>
+                <div class="col-12 d-flex pt-5 justify-content-between align-items-center flex-column">
+                    <h4>POLLO CON VERDURAS + CHAUFA DE POLLO + 02 WANTANES</h4>
+                    <span class="precio">S/. 23.90</span>
+                </div>
+                <div class="col-12 pt-5 d-flex justify-content-between align-items-center flex-column">
+                    <h4>TALLARÍN DE POLLO + CHAUFA DE POLLO + 02 WANTANES</h4>
+                    <span class="precio">S/. 23.90</span>
+                </div>
+                <div class="col-12 pt-5 d-flex justify-content-between align-items-center flex-column">
+                    <h4>TIPAKAY + CHAUFA DE POLLO + 02 WANTANES</h4>
+                    <span class="precio">S/. 24.90</span>
+                </div>
+                <div class="col-12 pt-5 d-flex justify-content-between align-items-center flex-column">
+                    <h4>SALTEADO VEGETARIANO + CHAUFA VEGETARIANO + 02 WANTANES</h4>
+                    <span class="precio">S/. 23.90</span>
+                </div>
+                <div class="col-12 pt-5 d-flex justify-content-between align-items-center flex-column">
+                    <h4>TALLARÍN VEGETARIANO + CHAUFA VEGETARIANO + 02 WANTANES</h4>
+                    <span class="precio">S/. 23.90</span>
+                </div>
+                <div class="col-12 pt-5 d-flex justify-content-between align-items-center flex-column">
+                    <h4>KAm LU WANTáN + CHAUFA DE POLLO</h4>
+                    <span class="precio">S/. 29.90</span>
+                </div>
+                <div class="col-12 pt-5 d-flex justify-content-between align-items-center flex-column">
+                    <h4>AEROPUERTO + 02 WANTANES</h4>
+                    <span class="precio">S/. 20.90</span>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    <!-- fin de combos personales-->
+    <!-- Inicio de combos familiares -->
+    <section id="combo-familia">
+        <div class="container lc-generales">
+            <div class="row pt-3">
+                <div class="col-12 py-3">                
+                    <picture>
+                        <!--<source media="(max-width: 768px)" srcset="img/la-carta/arroces.png">-->
+                        <img src="img/la-carta/Foto-desktop_combofamilia.jpg" alt="">
+                    </picture>
+                    <div class="col-12 fondo-rojo text-center">
+                        <h3>dragón familia</h3>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p class="fs-4 text-center">Las mejores combinaciones “taypá” para que nadie se quede con hambre y puedan picar de todo un poco.</p>
+                </div>
+            </div>
+            <div class="row py-5 pt-5">
+                <div class="col-12 d-flex justify-content-between align-items-center  flex-column">
+                    <h4>dragón familia para 4</h4>
+                    <ul class="combo-descripcion">
+                        <li>04 wantanes</li>
+                        <li>04 siu mai</li>
+                        <li>01 chaufa dragón o de pollo</li>
+                        <li>01 tallarín pollo en trozos o de chancho ahumado</li>
+                        <li>01 Chi Jau Kay o Ti Pa Kay</li>
+                    </ul>
+                    <span class="precio">S/. 149.90</span>
+                </div>
+                <div class="col-12 pt-5 d-flex justify-content-between align-items-center  flex-column">
+                    <h4>dragón familia para 6</h4>
+                    <ul class="combo-descripcion">
+                        <li>06 wantanes</li>
+                        <li>06 siu mai</li>
+                        <li>02 chaufa de pollo</li>
+                        <li>02 tallarín pollo en trozos</li>
+                        <li>01 1/2 Chi Jau Kay o Ti Pa Kay</li>
+                    </ul>
+                    <span class="precio">S/. 189.90</span>
+                </div>
+                <div class="col-12 pt-5 d-flex justify-content-between align-items-center  flex-column">
+                    <h4>dragón familia para 8</h4>
+                    <ul class="combo-descripcion">
+                        <li>08 wantanes</li>
+                        <li>08 siu mai</li>
+                        <li>01 chaufa de chancho ahumado</li>
+                        <li>02 chaufa de pollo</li>
+                        <li>02 tallarín pollo en trozo</li>
+                        <li>01 Kay Ten o Kan Lu Wantan</li>
+                    </ul>
+                    <span class="precio">S/. 249.90</span>
+                </div>
+                
+            </div>
+            
+        </div>
+    </section>
+    <!-- Fin de combos familiares -->
+    <!-- Seccion Postres -->
+    <section id="postres">
+        <div class="container lc-generales">
+            <div class="row pt-5">
+                <div class="col-12 py-3">
+                    
+                    <div class="col-12 fondo-rojo">
+                        <h3>postres</h3>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <p class="fs-3 text-center">Y para terminar, siempre un dulce.</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center pt-5">
+                    <h3>Leche asada</h3>
+                    <p>A base de leche perfumada con vainilla, hecha siguiendo la receta de la abuela.</p>
+                    <p><span class="precio">S/ 12.90</span></p>
+                    
+                </div>
+                <div class="col-12 text-center pt-5">
+                    <h3>Crema volteada</h3>
+                    <p>¡Suavecita! Horneada en baño maría y bañada con caramelo dulce, un auténtico manjar.</p>
+                    <p><span class="precio">S/ 12.90</span></p>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="bebidas">
+        <div class="container lc-generales py-4">
+            <div class="row pt-5">
+                <div class="col-12 ">
+                    <picture>
+                        <!--<source media="(max-width: 768px)" srcset="img/la-carta/arroces.png"> -->
+                        <img src="img/la-carta/Foto-desktop_bebidas.jpg" alt="Bebidas - Barrio Dragón">
+                    </picture>
+                    <div class="col-12 fondo-negro">
+                        <h3>Bebidas</h3>
+                    </div>
+                </div>
+                <div class="col-12 pt-5">
+                    <picture>
+                        <!--<source media="(max-width: 768px)" srcset="img/la-carta/arroces.png"> -->
+                        <img src="img/la-carta/Foto-desktop_tragosalcohol.jpg" alt="Bebidas - Barrio Dragón">
+                    </picture>
+                    <div class="col-12 fondo-rojo">
+                        <h3>los bravos del barrio (con alcohol)</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center los-nuestros-texto">
+                    <h3 class="pt-5">los nuestros</h3>
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>barrio dragón</h3>
+                    <p>Vodka Stolichnaya, tuna, limón, carambola, frutos del bosque.</p>
+                    <p><span class="precio">S/ 25.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>china town</h3>
+                    <p>Pisco, tuna, maracuyá, carambola.</p>
+                    <p><span class="precio">S/ 26.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>yúngi</h3>
+                    <p>Ron rubio Medellín, sake Nigori, piña, Bitters Fee Brothers.</p>
+                    <p><span class="precio">S/ 26.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>TAMARINDO ANDINO</h3>
+                    <p>Aqará plateado, tamarindo, mandarina, limón.</p>
+                    <p><span class="precio">S/ 25.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>YING YANG</h3>
+                    <p>Ron viejo de Caldas blanco, granadilla, limón, Triple Sec, ajonjolí.</p>
+                    <p><span class="precio">S/ 24.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>CÄIFÚ - FORTUNA</h3>
+                    <p>Gin MG rosa, licor de moras, sake Tokubetsu Junmai.</p>
+                    <p><span class="precio">S/ 27.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>CAOYAO - HERBAL</h3>
+                    <p>Matacuy, licor de manzana, limón, infusión de hierbas frescas.</p>
+                    <p><span class="precio">S/ 27.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>TAMARINDO ANDINO</h3>
+                    <p>Aqará plateado, tamarindo, mandarina, limón.</p>
+                    <p><span class="precio">S/ 25.90</span></p>                    
+                </div>
+            </div>
+            
+            <div class="row">
+                <div class="col-12 text-center py-5 los-nuestros-texto">
+                    
+                    <h3 class=" pt-4">clásicos con pisco</h3>
+                </div>
+                <div class="col-12 col-md-12 text-center py-2">
+                    <h3>ALGARROBINA</h3>
+                    <p>Pisco, algarrobina, leche, jarabe de goma.</p>
+                    <p><span class="precio">S/ 24.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>pisco sour</h3>
+                    <p>Pisco, limón, jarabe de goma, clara de huevo.</p>
+                    <p><span class="precio">S/ 24.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>chilcano</h3>
+                    <p>Pisco, Ginger Ale, limón.</p>
+                    <p><span class="precio">S/ 22.90</span></p>                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center py-5 los-nuestros-texto">
+                    
+                    <h3 class=" pt-4">clásicos con ron</h3>
+                </div>
+                <div class="col-12 col-md-12 text-center py-2">
+                    <h3>cuba libre</h3>
+                    <p>Ron, Coca Cola.</p>
+                    <p><span class="precio">S/ 25.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>MOJITO CLÁSICO</h3>
+                    <p>Ron blanco, azúcar, limón, hierba buena, agua mineral.</p>
+                    <p><span class="precio">S/ 22.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>RON & TONIC</h3>
+                    <p>Ron blanco, agua tónica.</p>
+                    <p><span class="precio">S/ 25.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>DARK & STORMY</h3>
+                    <p>Ron, limón, Ginger Beer.</p>
+                    <p><span class="precio">S/ 25.90</span></p>                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center py-5 los-nuestros-texto">
+                    
+                    <h3 class="pt-4">clásicos con vodka</h3>
+                </div>
+                <div class="col-12 col-md-12 text-center py-2">
+                    <h3>VODKA TONIC</h3>
+                    <p>Vodka, agua tónica.</p>
+                    <p><span class="precio">S/ 25.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>VODKA SUNRISE</h3>
+                    <p>Vodka, jugo de naranja, granadina.</p>
+                    <p><span class="precio">S/ 24.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>MOSCOW MULE</h3>
+                    <p>Vodka, limón, Ginger Beer.</p>
+                    <p><span class="precio">S/ 25.90</span></p>                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center py-5 los-nuestros-texto">
+                    
+                    <h3 class="pt-4">clásicos</h3>
+                </div>
+                <div class="col-12 col-md-12 text-center py-2">
+                    <h3>GIN AND TONIC</h3>
+                    <p>Ginebra, agua tónica y botánicos.</p>
+                    <p><span class="precio">S/ 27.90</span></p>                    
+                </div>
+                <div class="col-12 pt-5 d-flex justify-content-between align-items-center flex-column">
+                    <h4>Whisky</h4>
+                    <span class="precio">S/. 27.90</span>
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>cerveza</h3>
+                    <p class="py-3"><strong>CUSQUEÑA</strong><br><span class="precio">S/11.90</span></p>
+                    <p class="pb-3"><strong>PILSEN</strong><br><span class="precio">S/10.90</span></p>
+                    <p class="pb-3"><strong>CORONA</strong><br><span class="precio">S/12.90</span></p>                 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center los-nuestros-texto py-5">
+                    
+                    <h3 class=" pt-4">bajativos</h3>
+                </div>
+                <div class="col-12 col-md-12 text-center">
+                    <h3>sake</h3>
+                    <p>Desde Japón, frío o caliente.</p>
+                    <p><span class="precio">S/ 19.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>MATA CUY</h3>
+                    <p>Compuesto de hierbas andinas de Ollantaytambo, Cusco.</p>
+                    <p><span class="precio">S/ 19.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>PISCO</h3>
+                    <p>Puro, mosto verde o acholado.</p>
+                    <p><span class="precio">S/ 19.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>AQARÁ PLATEADO</h3>
+                    <p>Agave de los Andes.</p>
+                    <p><span class="precio">S/ 19.90</span></p>                    
+                </div>
+                
+            </div>
+            <div class="row pt-5">
                 <div class="col-12 py-5">
                     <picture>
-                        <source media="(max-width: 768px)" srcset="img/la-carta/arroces.png">
-                    <img src="img/la-carta/los-arroces-110w.png" alt="">
-                </picture>
-                </div>
-            </div>
-            <div class="row lc-sopas">
-                <div class="col-12 col-md-3 text-center px-4">
-                    <h3>Chaufa con Pollo</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
-                    <p><span class="precio">S/ 14.90</span></p>
-                    
-                </div>
-                <div class="col-12 col-md-3 text-center">
-                    <h3>Chaufa con Chancho Asado</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
-                    <p><span class="precio">S/ 14.90</span></p>
-                    
-                </div>
-                <div class="col-12 col-md-3 text-center">
-                    <h3>Chaufa con Pato Asado</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
-                    <p><span class="precio">S/ 14.90</span></p>
-                    
-                </div>
-                <div class="display-carta col-12 px-4">
-                    <div class="carta-menu">
-                      <img src="img/ChaufaDragon-pic_3.jpg" alt="">
-                    </div>
-                    <div class="cuerpo">
-                        <img src="img/alas-dragon.svg" alt="">
-                        <h2 class="nombre-menu">Chaufa Dragón</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque porro voluptates asperiores repellat eaque? Doloremque, provident corrupti.</p>
-                        <p><span class="precio">S/. 21.90</span></p>
+                        <!--<source media="(max-width: 768px)" srcset="img/la-carta/arroces.png"> -->
+                        <img src="img/la-carta/Foto-desktop_bebidassinalcohol.jpg" alt="Bebidas - Barrio Dragón">
+                    </picture>
+                    <div class="col-12 fondo-rojo">
+                        <h3>los sanitos del barrio (sin alcohol)</h3>
                     </div>
                 </div>
             </div>
-            <div class="row lc-sopas">
+            <div class="row">
+                <div class="col-12 text-center los-nuestros-texto">
+                    <h3 class="pt-4">los nuestros</h3>
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>TUN - TUNA</h3>
+                    <p>Tuna, maracuyá y té jazmín.</p>
+                    <p><span class="precio">S/. 14.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>ORIENTAL</h3>
+                    <p>Lychee, granadilla, té negro y ajonjolí.</p>
+                    <p><span class="precio">S/ 16.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>TROPICAL</h3>
+                    <p>Piña, coco y té verde.</p>
+                    <p><span class="precio">S/ 14.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>LA COLORADA</h3>
+                    <p>Frutos rojos, limón y soda.</p>
+                    <p><span class="precio">S/ 16.90</span></p>                    
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>LA SODA DEL INCA</h3>
+                    <p>Infusión de hierbas frescas, limón y soda.</p>
+                    <p><span class="precio">S/ 14.90</span></p>                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center py-5 los-nuestros-texto">
+                    <h3 class="pt-4">los de siempre</h3>
+                </div>
+                <div class="col-12 col-md-12 text-center">
+                    <h3>chicha</h3>
+                    <p class="py-3">1 litro<br><span class="precio">S/ 23.90</span></p>
+                    <p class="pb-3">1/2 litro<br><span class="precio">S/ 14.90</span></p>            
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>limonada</h3>
+                    <p class="py-3">1 litro<br><span class="precio">S/ 23.90</span></p>
+                    <p class="pb-3">1/2 litro<br><span class="precio">S/ 14.90</span></p>            
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>limonada frozen</h3>
+                    <p class="py-3">1 litro<br><span class="precio">S/ 25.90</span></p>
+                    <p class="pb-3">1/2 litro<br><span class="precio">S/ 16.90</span></p>            
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>gaseosa</h3>
+                    <p class="py-3">Personal<br><span class="precio">S/ 5.90</span></p>
+                    <p class="pb-3">600ml<br><span class="precio">S/ 7.90</span></p>
+                    <p class="pb-3">1 litro<br><span class="precio">S/ 13.90</span></p>            
+                </div>
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>agua</h3>
+                    <p class="py-3">500ml gas/sin gas<br><span class="precio">S/ 5.90</span></p>        
+                </div>
                 
-                <div class="col-12 text-center col-md-3 px-4">
-                    <h3>Chaufa con langostino</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
-                    <p><span class="precio">S/ 14.90</span></p>
-                    
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>té jazmín</h3>
+                    <p class="py-3">Taza<br><span class="precio">S/ 6.90</span></p>
+                    <p class="pb-3">Tetera<br><span class="precio">S/ 13.90</span></p>            
                 </div>
-                <div class="col-12 col-md-3 text-center">
-                    <h3>Chaufa especial</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
-                    <p><span class="precio">S/ 14.90</span></p>
-                    
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>café</h3>
+                    <p class="py-3">Americano<br><span class="precio">S/ 5.90</span></p>          
                 </div>
-                <div class="col-12 col-md-3 text-center">
-                    <h3>Chaufa con carne</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore, dolores?</p>
-                    <p><span class="precio">S/ 14.90</span></p>
-                    
+                <div class="col-12 col-md-12 text-center pt-5">
+                    <h3>infusiones</h3>
+                    <p class="py-3">Taza<br><span class="precio">S/ 5.90</span></p>          
                 </div>
-                <div class="display-carta col-12 px-4">
-                    <div class="carta-menu">
-                      <img src="img/ChaufaDragon-pic_3.jpg" alt="">
-                    </div>
-                    <div class="cuerpo">
-                        <img src="img/alas-dragon.svg" alt="">
-                        <h2 class="nombre-menu">Chaufa Dragón</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus atque porro voluptates asperiores repellat eaque? Doloremque, provident corrupti.</p>
-                        <p><span class="precio">S/. 21.90</span></p>
-                    </div>
-                </div>
-            </div>
                 
+            </div>
         </div>
     </section>
-    <section>
-        <div class="container">
-            <div class="row lc-sopas">
-                <div class="col-12 text-center">
-                    <img src="img/black-dragon.svg" width="50%" alt="">
+    <footer>
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-12  d-flex text-center flex-column align-content-center align-items-center align-self-center">
+                    <img class="pt-5 pb-3" src="img/logo-vertial.svg" width="130px" alt="">
+                    <p>Av. 28 de julio 1420. Miraflores. Lima.
+                       <br> De 12 del mediodía a 10 pm. <br><br>  Viernes y sábados hasta las 12am. 
+                    </p>
+                    <ul class="redes-sociales text-center pt-3" style="padding-left: 0;">
+                        <li><a href="https://www.facebook.com/barriodragon" target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="https://www.instagram.com/barriodragon/" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="https://www.tiktok.com/@barriodragon" target="_blank"><i class="fa-brands fa-tiktok"></i></a></li> 
+                    </ul>
+                    <div class="py-3">
+                        <a class="pt-3" href="https://barriodragon.pe">www.barriodragon.pe</a>
+                    </div>
+
                 </div>
             </div>
         </div>
-    </section>
-
-
+    </footer>
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <script>
-       var botonIrArriba = document.getElementById("btnIrArriba");
+   <script>
 
-        window.onscroll = function() {
-            if (document.body.scrollTop > 10 || document.documentElement.scrollTop > 10) {
-                botonIrArriba.style.display = "block";
-                botonIrArriba.style.opacity = "1";
-            } else {
-                botonIrArriba.style.opacity = "0";
-                setTimeout(function() {
-                    botonIrArriba.style.display = "none";
-                }, 300); // Esperar a que termine la animación de opacidad antes de ocultar
-            }
-        };
+    const $btnUp = document.getElementById("up");
 
-function irArriba() {
-    document.body.scrollTop = 0;
-    document.documentElement.scrollTop = 0;
-}
-    </script>
+document.addEventListener("click", (e)=> {
+  if(e.target === $btnUp){
+    alert("Hola desde JS");
+  }
+
+})
+   </script>
+
 </body>
 </html>
