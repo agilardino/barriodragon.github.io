@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@200;400;700&display=swap");
 html, body {
   width: 100vw;
-  height: 100%;
+  height: auto;
   scroll-behavior: smooth;
   font-family: "Outfit", sans-serif;
   background-image: url("../img/CartaBarrio-background2.gif");
