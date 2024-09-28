@@ -534,6 +534,11 @@ video {
     margin-top: calc(-3% + 0.5rem);
   }
 }
+.carta_menu {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 .card {
   background-color: #000;
   width: 100%;
