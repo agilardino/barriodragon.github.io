@@ -543,6 +543,11 @@ video {
   background-color: #000;
   width: 100%;
 }
+@media (min-width: 768px) {
+  .card {
+    width: 50%;
+  }
+}
 
 .card-img-top {
   border-radius: 0;
