@@ -584,6 +584,9 @@ video {
   margin-top: calc(10ch + 1rem);
   margin-bottom: -2.5rem;
 }
+.frame_5_col_2 img {
+  max-width: 45ch;
+}
 
 footer {
   height: 100svh;

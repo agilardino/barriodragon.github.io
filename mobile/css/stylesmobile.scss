@@ -594,6 +594,9 @@ video {
         margin-top: calc(10ch + 1rem);
         margin-bottom: -2.5rem;
     }
+    & img {
+        max-width: 45ch;
+    }
 
 
   }
