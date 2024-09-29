@@ -211,7 +211,7 @@ nav .items-carta .menu a:hover {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   background-color: #ececec;
-  z-index: -1;
+  /* z-index: -1 */
   top: 110px;
 }
 
@@ -223,7 +223,7 @@ nav .items-carta .menu a:hover {
   height: calc(20% + 1rem);
   background-color: #ececec;
   bottom: 0px;
-  z-index: -1;
+  /*z-index: -1*/
 }
 
 .carta-menu img {
@@ -232,6 +232,7 @@ nav .items-carta .menu a:hover {
   -o-object-fit: fill;
      object-fit: fill;
   border-radius: 100%;
+  z-index: 1;
 }
 
 .nombre-menu {
