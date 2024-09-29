@@ -581,7 +581,7 @@ video {
     line-height: 1.4em;
 }
 
-.frame_5_col_2{
+.frame_5_col_2 {
     background: url('../img/dragon-bg.png') no-repeat center;
     background-size: cover;
     padding-block: 2.5rem;
@@ -591,8 +591,8 @@ video {
         padding: 3rem 0;
         font-family: var(--barrio-text);
         color: #000;
+        margin-top: calc(10ch + 1rem);
         margin-bottom: -2.5rem;
-        margin-top: calc(10% + 1rem);
     }
 
 
