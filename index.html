@@ -422,32 +422,37 @@
 // });
 
 
-// Función para inicializar LocomotiveScroll con dirección dinámica
-function initScroll() {
-    let direction = window.innerWidth > 768 ? "horizontal" : "vertical"; // Cambia según el ancho de la pantalla
+// Variable para almacenar la dirección actual
+let currentDirection = window.innerWidth > 768 ? "horizontal" : "vertical";
 
-    const scroll = new LocomotiveScroll({
+// Función para inicializar LocomotiveScroll con la dirección actual
+function initScroll(direction) {
+    return new LocomotiveScroll({
         el: document.querySelector('[data-scroll-container]'),
         smooth: true,
         direction: direction,
         initClass: "has-scroll-init",
         lerp: 0.25,
     });
-    
-    return scroll;
 }
 
-// Inicializamos el scroll
-let scrollInstance = initScroll();
+// Inicializamos el scroll con la dirección inicial
+let scrollInstance = initScroll(currentDirection);
 
-// Redetecta el ancho de la pantalla al redimensionar y actualiza la dirección
-window.addEventListener('resize', function() {
-    if ((window.innerWidth > 768 && scrollInstance.direction !== 'horizontal') ||
-        (window.innerWidth <= 768 && scrollInstance.direction !== 'vertical')) {
+// Función para manejar el redimensionamiento y cambiar la dirección solo si es necesario
+function handleResize() {
+    const newDirection = window.innerWidth > 768 ? "horizontal" : "vertical";
+
+    // Solo cambiar si la nueva dirección es diferente de la actual
+    if (newDirection !== currentDirection) {
+        currentDirection = newDirection;
         scrollInstance.destroy(); // Destruye la instancia actual
-        scrollInstance = initScroll(); // Crea una nueva instancia con la dirección correcta
+        scrollInstance = initScroll(currentDirection); // Reinicia el scroll con la nueva dirección
     }
-});
+}
+
+// Agregamos un listener para el evento de redimensionamiento
+window.addEventListener('resize', handleResize);
 
 
 
