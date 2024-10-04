@@ -591,11 +591,11 @@ video {
         padding: clamp(1rem, 2vh, 3rem);
         font-family: var(--barrio-text);
         color: #000;
-        margin-top: calc(1ch + 1rem);
+        // margin-top: calc(1ch + 1rem);
         // margin-bottom: -2.5rem;
     }
     & img {
-        max-width: 50%;
+        max-width: 60%;
     }
 
 

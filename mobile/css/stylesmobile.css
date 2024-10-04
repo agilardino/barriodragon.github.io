@@ -581,10 +581,9 @@ video {
   padding: clamp(1rem, 2vh, 3rem);
   font-family: var(--barrio-text);
   color: #000;
-  margin-top: calc(1ch + 1rem);
 }
 .frame_5_col_2 img {
-  max-width: 50%;
+  max-width: 60%;
 }
 
 footer {
