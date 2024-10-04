@@ -578,14 +578,13 @@ video {
 }
 .frame_5_col_2 h3 {
   font-size: 2.6rem;
-  padding: 3rem 0;
+  padding: clamp(1rem, 2vh, 3rem);
   font-family: var(--barrio-text);
   color: #000;
-  margin-top: calc(10ch + 1rem);
-  margin-bottom: -2.5rem;
+  margin-top: calc(1ch + 1rem);
 }
 .frame_5_col_2 img {
-  max-width: 20%;
+  max-width: 50%;
 }
 
 footer {
