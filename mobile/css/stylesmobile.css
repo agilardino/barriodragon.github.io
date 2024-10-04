@@ -111,7 +111,7 @@ img {
     top: 0;
     right: 0;
     bottom: 0;
-    background-color: #1c1c1c;
+    background-color: var(--red-color);
     filter: opacity(1);
     padding: 2rem;
     box-shadow: 0 0 0 100vmax rgba(224, 25, 25, 0.5);
